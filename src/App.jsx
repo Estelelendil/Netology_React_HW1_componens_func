@@ -1,4 +1,5 @@
 import './App.css';
+import ShopItemClass from './components/ShopItemClass';
 import ShopItemFunc from './components/ShopItemFunc';
 
 function App() {
@@ -17,8 +18,14 @@ function App() {
     <div className="highlight-window">
       <div className='highlight-overlay'></div>
     </div>
-    <div className="window">
+    <div style={{display:'flex', gap:'15px'}}>
+      
+    <div className="window" >
       <ShopItemFunc item={item} />
+    </div>
+    <div className="window" >
+      <ShopItemClass item={item} />
+    </div>
     </div>
   </div>
   );
